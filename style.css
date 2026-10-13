@@ -3,3 +3,63 @@
 
 .contact-card{display:flex;flex-direction:column;justify-content:center;gap:32px}.contact-card h3{font-size:22px;font-weight:700;margin:0 0 12px}.contact-card p{margin:0 0 12px;line-height:1.6}.contact-email{color:inherit;text-decoration:underline;text-underline-offset:5px;font-size:clamp(16px,2vw,22px);overflow-wrap:anywhere}.contact-email:hover{opacity:.7}.rental-contact{border-top:1px solid currentColor;padding-top:28px}
 .intro h1,.section-title h2,.feedback-copy h2{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-stretch:normal;letter-spacing:-.8px}
+
+
+@media (max-width: 640px) {
+    .feedback-section {
+        min-width: 0;
+        margin: 35px 0;
+        padding: 24px 20px;
+        gap: 24px;
+        border-radius: 18px;
+    }
+
+    .feedback-copy {
+        min-width: 0;
+    }
+
+    .feedback-copy h2 {
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.08;
+        letter-spacing: -1px;
+        margin: 16px 0;
+        overflow-wrap: normal;
+    }
+
+    .feedback-copy h2 br {
+        display: initial;
+    }
+
+    .feedback-copy > p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .contact-card {
+        gap: 22px;
+    }
+
+    .contact-card h3 {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .contact-card p {
+        font-size: 15px;
+    }
+
+    .contact-email {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .rental-contact {
+        padding-top: 22px;
+    }
+
+    .site-footer {
+        gap: 12px;
+        padding: 0 20px 24px;
+    }
+}
+
